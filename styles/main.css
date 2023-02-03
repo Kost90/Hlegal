@@ -106,7 +106,6 @@ button:active {
   background: center/cover no-repeat url("../images/main page/background-img-main.svg");
   position: relative;
   text-align: center;
-  z-index: -2;
 }
 
 header {
@@ -216,6 +215,9 @@ div .dot {
 .div-symbol-main {
   padding-top: 185px;
   padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
 }
 
 .sec-1-homepage .h1main {
@@ -229,6 +231,7 @@ div .dot {
 }
 
 .scrolllbtn {
+  height: 42px;
   width: 42px;
   background: transparent;
   box-shadow: none;
@@ -236,12 +239,13 @@ div .dot {
   color: white;
   padding: 10px;
   cursor: pointer;
-  margin-bottom: 100px;
   border-radius: 50%;
-  left: calc(50% - 21px);
-  bottom: 0px;
   opacity: 0.5;
   border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .scrolllbtn:hover {
   color: #B3B3BA;
