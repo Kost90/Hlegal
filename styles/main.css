@@ -243,5 +243,12 @@ div .dot {
   opacity: 0.5;
   border: 1px solid #FFFFFF;
 }
+.scrolllbtn:hover {
+  color: #B3B3BA;
+  background: #EDEDF7;
+}
+.scrolllbtn:active {
+  background: #F0145A;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -35,7 +35,9 @@ header {
   line-height: 14px;
   text-align: center;
   letter-spacing: 1px;
-  color:base.$main-white ;
+
+  color:base.$main-white
+;
   padding: 0;
 
   .btn-header:last-child {
@@ -111,7 +113,7 @@ div .dot {
   gap: 15px;
 }
 
-.sec-1-homepage .symbolmain{
+.sec-1-homepage .symbolmain {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -119,12 +121,12 @@ div .dot {
   height: 456px;
 }
 
-.div-symbol-main{
+.div-symbol-main {
   padding-top: 185px;
   padding-bottom: 20px;
 }
 
-.sec-1-homepage .h1main{
+.sec-1-homepage .h1main {
   color: base.$main-white;
   z-index: 1;
   font-size: 38px;
@@ -134,7 +136,7 @@ div .dot {
   padding-top: 60px;
 }
 
-.scrolllbtn{
+.scrolllbtn {
   width: 42px;
   background: transparent;
   box-shadow: none;
@@ -144,10 +146,19 @@ div .dot {
   cursor: pointer;
   margin-bottom: 100px;
   border-radius: 50%;
-  left: calc(50% - 42px/2);
+  left: calc(50% - 42px / 2);
   bottom: 0px;
   opacity: 0.5;
   border: 1px solid #FFFFFF;
+
+  &:hover {
+    color: #B3B3BA;
+    background: #EDEDF7;
+  }
+
+  &:active {
+    background: #F0145A;
+  }
 }
 
 
