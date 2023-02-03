@@ -102,25 +102,28 @@ button:active {
   box-shadow: none;
 }
 
+.sec-1-homepage {
+  background: center/cover no-repeat url("../images/main page/background-img-main.svg");
+  position: relative;
+  text-align: center;
+  z-index: -2;
+}
+
+header {
+  padding: 50px 60px 0px;
+}
+
+.d-flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+  gap: 623px;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
-}
-
-.sec-1-homepage {
-  background: center/cover no-repeat url("../images/main page/background-img-main.svg");
-}
-
-.d-flex {
-  display: flex;
-}
-
-.justify-content {
-  justify-content: space-between;
-}
-
-.align-item {
-  align-items: center;
 }
 
 .btn-header {
@@ -136,6 +139,9 @@ button:active {
   color: white;
   padding: 0;
 }
+.btn-header .btn-header:last-child {
+  margin-right: 20px;
+}
 .btn-header:hover {
   color: #B3B3BA;
   background: #EDEDF7;
@@ -144,25 +150,32 @@ button:active {
   background: #F0145A;
 }
 
-div .lang-header {
-  max-width: 82px;
-  height: 24px;
+.header-nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.header-nav-list ul li a {
+.header-nav-links a {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: right;
   color: #FFFFFF;
-  margin-right: 15px;
 }
-.header-nav-list ul li a:first-child {
-  font-weight: 400;
+.header-nav-links a:hover {
+  color: #F0145A;
+}
+
+.header-btn-block {
+  margin-right: 20px;
+}
+
+.header-adress-block {
+  margin-right: 13px;
+}
+.header-adress-block a {
   font-size: 16px;
   line-height: 19px;
-  text-align: right;
-  color: #FFFFFF;
 }
 
 div .dot {
@@ -172,9 +185,63 @@ div .dot {
   background: #E6E6F0;
 }
 
+.header-number-block {
+  margin-right: 10px;
+  margin-left: 1px;
+}
+.header-number-block a {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
 .social-icon-header-facebook {
   width: 24px;
   height: 24px;
+}
+
+.header-links-block {
+  display: flex;
+  gap: 15px;
+}
+
+.sec-1-homepage .symbolmain {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  height: 456px;
+}
+
+.div-symbol-main {
+  padding-top: 185px;
+  padding-bottom: 20px;
+}
+
+.sec-1-homepage .h1main {
+  color: white;
+  z-index: 1;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  padding-bottom: 300px;
+  padding-top: 60px;
+}
+
+.scrolllbtn {
+  width: 42px;
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 100px;
+  border-radius: 50%;
+  left: calc(50% - 21px);
+  bottom: 0px;
+  opacity: 0.5;
+  border: 1px solid #FFFFFF;
 }
 
 /*# sourceMappingURL=main.css.map */
