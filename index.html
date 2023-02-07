@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Hlegal</title>
 </head>
 <body>
@@ -58,5 +62,68 @@
     </div>
 </section>
 
+<section class="sec-2-homepage">
+    <div class="container">
+        <div class="tabs">
+            <div>
+                <ul class="tabs-list">
+                    <li><a href="#tabs-1">Послідовні</a></li>
+                    <li><a href="#tabs-2">Клієнтоорієнтовані</a></li>
+                    <li><a href="#tabs-3">Інноваційні</a></li>
+                    <li><a href="#tabs-3">Бізнес-орієнтовані
+                        юристи</a></li>
+                </ul>
+            </div>
+            <div>
+                <div id="tabs-1">
+                    <h2>
+                        Перевертаємо уявлення про юридичні послуги
+                    </h2>
+                    <p>
+                        Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і
+                        досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування
+                        морського права в Україні.
+                    </p>
+                </div>
+                <div id="tabs-2">
+                    <h2>
+                        Орієнтовані на клієнтів
+                    </h2>
+                    <p>
+                        Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і
+                        досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування
+                        морського права в Україні.
+                    </p>
+                </div>
+                <div id="tabs-3">
+                    <h2>
+                        Застосовуємо іноваціні технології
+                    </h2>
+                    <p>
+                        Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і
+                        досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування
+                        морського права в Україні.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="link-arrow-container">
+            <a href="#" class="link-arrow-sec2">послуги</a>
+        </div>
+            <h1 class="animation-h1-homepage">
+                Що ми вміємо робити краще за інших?
+            </h1>
+    </div>
+</section>
+
+<script>
+    $(function () {
+        $(".tabs").tabs();
+    });
+</script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
