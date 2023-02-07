@@ -326,9 +326,6 @@ div .link-arrow-sec2 {
   display: flex;
   align-items: center;
 }
-div .link-arrow-sec2:hover {
-  color: #F0145A;
-}
 div .link-arrow-sec2:after {
   content: "";
   border: 2px solid #FFFFFF;
@@ -337,6 +334,12 @@ div .link-arrow-sec2:after {
   padding: 2px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+div .link-arrow-sec2:hover {
+  color: #F0145A;
+}
+div .link-arrow-sec2:hover::after {
+  border: 2px solid #F0145A;
 }
 
 .sec-2-homepage h1 {

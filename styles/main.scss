@@ -236,18 +236,21 @@ div .link-arrow-sec2{
   line-height: 17px;
   display: flex;
   align-items: center;
+  &:after{
+    content: '';
+    border: 2px solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
   &:hover{
     color: #F0145A;
-  }
-    &:after{
-      content: '';
-      border: 2px solid #FFFFFF;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 2px;
-      transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
+    &::after{
+      border: 2px solid #F0145A;
     }
+  }
 }
 
 .sec-2-homepage h1{
@@ -258,6 +261,8 @@ div .link-arrow-sec2{
   margin-bottom: 68px;
   margin-top: 3px;
 }
+
+
 
 
 
