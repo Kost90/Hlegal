@@ -25,15 +25,15 @@ const settingSlider = {
     ]
 }
 
-$(document).ready(function (){
-    $('.slider').slick(settingSlider)
-})
-
-$(window).on('resize', function () {
-    if ($(window).width() > 320 && !$('.slider').hasClass('slick-initialized')) {
-        $('.slider').slick(settingSlider);
-    }
-    if ($(window).width() >= 1025 && $('.slider').hasClass('slick-initialized')) {
-        $('.slider').slick('unslick');
-    }
+$(document).ready(function(){
+    $('.slider').slick(settingSlider);
 });
+
+// $(window).on('resize', function () {
+//     if ($(window).width() > 320 && !$('.slider').hasClass('slick-initialized')) {
+//         $('.slider').slick(settingSlider);
+//     }
+//     if ($(window).width() >= 1025 && $('.slider').hasClass('slick-initialized')) {
+//         $('.slider').slick('unslick');
+//     }
+// });
