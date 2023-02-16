@@ -2,7 +2,7 @@
 @use "base";
 
 .sec-1-homepage {
-  background: center/ cover no-repeat url("../images/main page/background-img-main.svg");
+  background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
   position: relative;
   text-align: center;
   min-height: 100vh;
@@ -14,10 +14,9 @@
     width:100%;
     height: 200px;
     bottom: 0px;
-    z-index: 2;
+    z-index: 0;
   }
 }
-
 header {
   padding: 50px 60px 0px;
 }
@@ -129,6 +128,13 @@ div .dot {
   height: 456px;
 }
 
+.img-frame{
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .div-symbol-main {
   padding-top: 185px;
   padding-bottom: 20px;
@@ -146,6 +152,35 @@ div .dot {
   padding-top: 60px;
 }
 
+.arrow{
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  border: 1px solid #FFFFFF;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transition: all 0.2s;
+  transform: translateX(-50%);
+  border-radius: 50%;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:after {
+    content: '';
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
 .scrolllbtn {
   height: 42px;
   width: 42px;
