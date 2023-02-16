@@ -108,6 +108,16 @@ button:active {
   text-align: center;
   min-height: 100vh;
 }
+.sec-1-homepage:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+  width: 100%;
+  height: 200px;
+  bottom: 0px;
+  z-index: 2;
+}
 
 header {
   padding: 50px 60px 0px;
@@ -476,39 +486,79 @@ div .link-arrow-sec2:hover::after {
   opacity: 0.75;
 }
 
-.wraper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 413px);
-  grid-gap: 1px;
+.flex-container {
+  display: flex;
+  gap: 1px;
   margin-top: 77px;
+  margin-bottom: 30px;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: end;
 }
-.wraper .h3-grid-first {
-  font-size: 14px;
-  line-height: 17px;
-  text-align: left;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #F0145A;
-  padding: 20px 20px 0;
-  border-bottom: 1px solid white;
-}
-.wraper h3 {
+.flex-container h3 {
   font-size: 24px;
   line-height: 28px;
   color: #686887;
-  padding: 20px;
+  padding: 0 20px 20px;
 }
-.wraper p {
+.flex-container p {
   font-size: 18px;
   line-height: 26px;
   color: #B3B3BA;
   padding: 0 20px 20px;
 }
 
-.grid-card-1 {
+.flex-card-1 {
   border-radius: 12px 0px 0px 0px;
   background: linear-gradient(0deg, #F5F5FA, #F5F5FA), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  width: 433px;
+}
+.flex-card-1 .h3-flex-first {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #F0145A;
+  padding: 20px 20px 20px;
+  border-bottom: 1px solid white;
+}
+.flex-card-1 .h3-flex-sec {
+  padding: 48px 20px 20px 20px;
+}
+
+.flex-card-2 {
+  width: 454px;
+  background: linear-gradient(0deg, #F5F5FA, #F5F5FA), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  padding-top: 105px;
+}
+
+.flex-card-3 {
+  width: 431px;
+  background: linear-gradient(0deg, #F5F5FA, #F5F5FA), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  padding-top: 105px;
+  border-radius: 0px 12px 0px 0px;
+}
+
+.flex-card-4 {
+  width: 320px;
+  background: linear-gradient(0deg, #F5F5FA, #F5F5FA), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  border-radius: 0px 0px 0px 12px;
+  padding-top: 20px;
+}
+
+.flex-card-5 {
+  width: 453px;
+  background: linear-gradient(0deg, #F5F5FA, #F5F5FA), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  padding-top: 76px;
+}
+
+.flex-card-6 {
+  width: 545px;
+  background: linear-gradient(0deg, #F5F5FA, #F5F5FA), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  padding-top: 76px;
+  border-radius: 0px 0px 12px 0px;
 }
 
 /*# sourceMappingURL=main.css.map */
