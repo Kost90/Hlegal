@@ -405,6 +405,42 @@ div .link-arrow-sec2{
   }
 }
 
+.wraper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 413px);
+  grid-gap: 1px;
+  margin-top: 77px;
+  justify-content: center;
+  .h3-grid-first{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: base.$pink-accent;
+    padding: 20px 20px 0;
+    border-bottom: 1px solid white;
+  }
+  h3{
+    font-size: 24px;
+    line-height: 28px;
+    color: base.$main-color-soft;
+    padding: 20px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 26px;
+    color: #B3B3BA;
+    padding: 0 20px 20px;
+  }
+}
+
+.grid-card-1{
+  border-radius: 12px 0px 0px 0px;
+  background: linear-gradient(0deg, #F5F5FA, #F5F5FA),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+}
 
 
 
