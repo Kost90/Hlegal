@@ -1,6 +1,6 @@
 const settingSlider = {
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
     lazyLoad: 'ondemand',
     speed: 500,

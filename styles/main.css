@@ -388,4 +388,92 @@ div .link-arrow-sec2:hover::after {
   margin-left: 40px;
 }
 
+.sec-3-homepage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider {
+  margin: 80px auto;
+  width: 100%;
+}
+.slider .slider-item {
+  display: flex;
+  gap: 40px;
+  background: #F5F5FA;
+  border-radius: 12px;
+}
+.slider .slider-item .slid-r-side {
+  margin-top: 40px;
+}
+
+.slid-r-side a {
+  margin-bottom: 3px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.slid-r-side a:after {
+  content: "";
+  border: 2px solid #24A3FF;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.slid-r-side a:hover {
+  color: #F0145A;
+}
+.slid-r-side a:hover::after {
+  border: 2px solid #F0145A;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.slid-r-side h1 {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+.slid-r-side p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #B3B3BA;
+  margin: 5px auto;
+}
+
+.slider .slick-dots li button {
+  background: #24A3FF;
+  height: 16px;
+  width: 16px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+.slider .slick-dots li button:before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+.slider .slick-dots li.slick-active button {
+  background: #24A3FF;
+  opacity: 0.75;
+}
+
 /*# sourceMappingURL=main.css.map */
