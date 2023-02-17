@@ -46,3 +46,13 @@ $gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, 
   cursor: pointer;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  @media screen and (min-width: 1024px){
+    padding: 0 60px;
+  }
+}
+

@@ -29,6 +29,19 @@ $(document).ready(function(){
     $('.slider').slick(settingSlider);
 });
 
+    $(".arrow").on("click", function (event) {
+    event.preventDefault();
+    const id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+});
+
+
+    $(function () {
+    $(".tabs").tabs();
+});
+
+
 // $(window).on('resize', function () {
 //     if ($(window).width() > 320 && !$('.slider').hasClass('slick-initialized')) {
 //         $('.slider').slick(settingSlider);
