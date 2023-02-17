@@ -730,10 +730,8 @@ div .link-arrow-sec2:hover::after {
   padding-top: 20px;
 }
 
-.border-publication {
-  max-width: 1320px;
-  margin: 0 auto;
-  border: 4px solid #E6E6F0;
+.flex-footer {
+  margin-top: 35px;
 }
 
 /*# sourceMappingURL=main.css.map */
