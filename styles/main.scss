@@ -636,9 +636,63 @@ div .link-arrow-sec2{
     padding-top: 20px;
   }
 }
+footer{
+  background: #F5F5FA;
+  position: relative;
+}
 
 .flex-footer{
-  margin-top: 35px;
+  display: flex;
+justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+  .dot-footer{
+    background: #B3B3BA;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  a{
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    &:hover{
+      color:base.$pink-accent;
+    }
+  }
+  p{
+    font-size: 16px;
+    line-height: 19px;
+    color: #B3B3BA;
+  }
+}
+
+.flex-justcont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  .dot-footer{
+    background: #B3B3BA;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  p{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #46466E;
+  }
 }
 
 
