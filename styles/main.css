@@ -775,6 +775,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  padding-bottom: 40px;
 }
 .flex .dot-footer {
   background: #B3B3BA;
