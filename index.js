@@ -42,6 +42,7 @@ $(document).ready(function(){
 });
 
 
+
 // $(window).on('resize', function () {
 //     if ($(window).width() > 320 && !$('.slider').hasClass('slick-initialized')) {
 //         $('.slider').slick(settingSlider);
