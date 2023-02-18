@@ -541,8 +541,73 @@ header {
   border-radius: 0px 0px 12px 12px;
 }
 
-.tabs {
+.slider-mb-sec-2 {
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 100%;
+}
+.slider-mb-sec-2 .slider-item {
   display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.slider-mb-sec-2 .slider-item h3 {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.slider-mb-sec-2 .slider-item h2 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.slider-mb-sec-2 .slider-item p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.slider-mb-sec-2 .slick-dots li button {
+  background: #24A3FF;
+  height: 16px;
+  width: 16px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+.slider-mb-sec-2 .slick-dots li button:before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+.slider-mb-sec-2 .slick-dots li.slick-active button {
+  background: #24A3FF;
+  opacity: 0.75;
+}
+
+.tabs {
+  display: none;
   margin: 0 auto;
   max-width: 1320px;
   width: 100%;
@@ -587,6 +652,53 @@ header {
   line-height: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .display-none-slide {
+    display: none;
+  }
+  .tabs {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1320px;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .tabs .tabs-list {
+    padding-right: 80px;
+    text-align: right;
+    color: #B3B3BA;
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .tabs .tabs-list li {
+    border-right: 4px solid #E6E6F0;
+    padding-right: 40px;
+  }
+  .tabs .tabs-list a {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .tabs .tabs-list .ui-tabs-active {
+    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    border-right: 4px solid #F0145A;
+  }
+  .tabs h2 {
+    color: #FFFFFF;
+    text-align: left;
+  }
+  .tabs p {
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
 div .link-arrow-sec2 {
   text-align: left;
   color: #FFFFFF;
@@ -672,45 +784,7 @@ div .link-arrow-sec2:hover::after {
   height: 100vh;
 }
 
-.slider {
-  margin: 80px auto;
-  width: 100%;
-}
-.slider .slider-item {
-  display: flex;
-  gap: 40px;
-  background: #F5F5FA;
-  border-radius: 12px;
-}
-.slider .slider-item .slid-r-side {
-  margin-top: 40px;
-}
-
-.slid-r-side a {
-  margin-bottom: 3px;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.slid-r-side a:after {
-  content: "";
-  border: 2px solid #24A3FF;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-.slid-r-side a:hover {
-  color: #F0145A;
-}
-.slid-r-side a:hover::after {
-  border: 2px solid #F0145A;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-.slid-r-side h1 {
+h1 {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -718,40 +792,12 @@ div .link-arrow-sec2:hover::after {
   text-fill-color: transparent;
   margin-bottom: 15px;
 }
-.slid-r-side p {
+
+p {
   font-size: 18px;
   line-height: 21px;
   color: #B3B3BA;
   margin: 5px auto;
-}
-
-.slider .slick-dots li button {
-  background: #24A3FF;
-  height: 16px;
-  width: 16px;
-  outline: none;
-  line-height: 0px;
-  font-size: 0px;
-  color: transparent;
-  padding: 5px;
-  cursor: pointer;
-  opacity: 0.2;
-}
-.slider .slick-dots li button:before {
-  content: "";
-  height: 16px;
-  width: 16px;
-  outline: none;
-  line-height: 0px;
-  font-size: 0px;
-  color: transparent;
-  padding: 5px;
-  cursor: pointer;
-  opacity: 0.2;
-}
-.slider .slick-dots li.slick-active button {
-  background: #24A3FF;
-  opacity: 0.75;
 }
 
 .flex-container {

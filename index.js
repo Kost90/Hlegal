@@ -26,8 +26,10 @@ const settingSlider = {
 }
 
 $(document).ready(function(){
+    $('.slider-mb-sec-2').slick(settingSlider);
     $('.slider').slick(settingSlider);
 });
+
 
     $(".arrow").on("click", function (event) {
     event.preventDefault();
