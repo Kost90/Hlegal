@@ -699,7 +699,10 @@ header {
     line-height: 30px;
   }
 }
-div .link-arrow-sec2 {
+.link-arrow-container {
+  padding-top: 45px;
+}
+.link-arrow-container .link-arrow-sec2 {
   text-align: left;
   color: #FFFFFF;
   opacity: 0.5;
@@ -708,7 +711,7 @@ div .link-arrow-sec2 {
   display: flex;
   align-items: center;
 }
-div .link-arrow-sec2:after {
+.link-arrow-container .link-arrow-sec2:after {
   content: "";
   border: 2px solid #FFFFFF;
   border-width: 0 3px 3px 0;
@@ -717,38 +720,47 @@ div .link-arrow-sec2:after {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-div .link-arrow-sec2:hover {
+.link-arrow-container .link-arrow-sec2:hover {
   color: #F0145A;
 }
-div .link-arrow-sec2:hover::after {
+.link-arrow-container .link-arrow-sec2:hover::after {
   border: 2px solid #F0145A;
 }
 
 .sec-2-homepage h1 {
+  font-size: 32px;
+  line-height: 38px;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-  margin-bottom: 68px;
+  margin-bottom: 20px;
   margin-top: 3px;
 }
 
 .wraper-sec2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 413px);
+  grid-template-columns: repeat(auto-fit, 1fr);
   grid-gap: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
+  align-content: center;
 }
 .wraper-sec2 .card-sec2 {
-  max-width: 413px;
+  width: 100%;
+}
+.wraper-sec2 .card-sec2 .card-mb-sec2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .wraper-sec2 .card-sec2 img {
+  width: 64px;
+  height: 64px;
   margin-bottom: 20px;
-  margin-right: 320px;
 }
 .wraper-sec2 .card-sec2 a {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 21px;
 }
 .wraper-sec2 .card-sec2 p {
   margin-top: 15px;
@@ -778,6 +790,39 @@ div .link-arrow-sec2:hover::after {
   margin-left: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .link-arrow-container {
+    padding-top: 80px;
+  }
+  .sec-2-homepage h1 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 68px;
+  }
+  .wraper-sec2 {
+    padding-bottom: 119px;
+    grid-template-columns: repeat(auto-fit, 413px);
+    align-content: center;
+    justify-content: center;
+  }
+  .wraper-sec2 .card-sec2 {
+    width: 100%;
+  }
+  .wraper-sec2 .card-sec2 .card-mb-sec2 {
+    flex-direction: column;
+    align-items: unset;
+    gap: 0;
+  }
+  .wraper-sec2 .card-sec2 img {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 20px;
+  }
+  .wraper-sec2 .card-sec2 a {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .sec-3-homepage {
   position: relative;
   width: 100%;
