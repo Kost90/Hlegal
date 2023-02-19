@@ -28,6 +28,7 @@ const settingSlider = {
 $(document).ready(function(){
     $('.slider-mb-sec-2').slick(settingSlider);
     $('.slider').slick(settingSlider);
+    $('.slider-mb-sec-3').slick(settingSlider);
 });
 
 
