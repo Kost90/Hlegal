@@ -362,5 +362,51 @@ header {
     line-height: 21px;
   }
 }
+.flex-container-contact {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.container-contact {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.container-contact p {
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+}
+.container-contact a {
+  font-size: 21px;
+  line-height: 30px;
+}
+.container-contact a:hover {
+  color: #F0145A;
+}
+
+.border-contact {
+  border: 2px solid #E6E6F0;
+  max-width: 333px;
+  width: 100%;
+}
+
+.flex-contact-mb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.flex-contact-mb a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=contact.css.map */
