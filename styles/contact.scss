@@ -13,6 +13,9 @@ header{
 .d-flex-header-desctop-cont{
   display: none;
 }
+.d-flex-header-desctop-cont-2{
+  display: none;
+}
 
 .flex-header-mob-contact{
   display: flex;
@@ -206,6 +209,10 @@ header{
       border-radius: 50%;
       background: #B3B3BA;
     }
+  }
+
+  .d-flex-header-desctop-cont-2{
+    display: block;
   }
 
   .header-links-block-cont{
