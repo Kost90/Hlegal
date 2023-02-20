@@ -312,6 +312,12 @@ header{
   }
 }
 
+@media screen and (min-width: 568px){
+  .flex-container-contact{
+    display: none;
+  }
+}
+
 
 
 

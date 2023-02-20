@@ -409,4 +409,10 @@ header {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 568px) {
+  .flex-container-contact {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=contact.css.map */
