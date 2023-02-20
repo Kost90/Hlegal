@@ -118,7 +118,7 @@ button:active {
   background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
   position: relative;
   text-align: center;
-  min-height: 100vh;
+  min-height: 100%;
 }
 .sec-1-homepage:after {
   content: "";
@@ -1085,10 +1085,15 @@ header {
     height: 100%;
     margin-top: 61px;
   }
+  .flex-cases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .flex-container {
     display: flex;
     gap: 1px;
-    width: 335px;
+    width: 445px;
     margin-bottom: 30px;
     justify-content: center;
     flex-direction: column;
@@ -1219,6 +1224,7 @@ header {
 .grid-container img {
   width: 187px;
   height: 90px;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -1233,6 +1239,7 @@ header {
   .grid-container img {
     width: 360px;
     height: 120px;
+    object-fit: cover;
   }
 }
 .sec-3-publications {
@@ -1498,7 +1505,7 @@ footer {
 .flex p {
   font-size: 16px;
   line-height: 19px;
-  text-align: right;
+  text-align: center;
   color: #46466E;
 }
 
