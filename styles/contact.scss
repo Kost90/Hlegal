@@ -66,9 +66,7 @@ header{
 
 .header-links-block-cont{
   display: none;
-  //position: fixed;
   background: white;
-  //opacity: 0.7;
   width: 100%;
   text-align: center;
   height: 100vh;
@@ -91,7 +89,7 @@ header{
   width: 30px;
   position: absolute;
   right: 0;
-  top: 13%;
+  top: 12%;
   z-index: 4;
 }
 
@@ -150,6 +148,13 @@ header{
   transform: rotate(-405deg);
 }
 
+@media screen and (min-width: 568px) {
+
+  .hamburger{
+    top: 13%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   header {
     padding: 50px 60px 0px;
@@ -168,6 +173,11 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+  }
+
+  svg{
+    width: 230px;
+    height: 45px;
   }
 
   .header-nav-links-cont{
@@ -197,8 +207,8 @@ header{
       }
     }
     a{
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 12px;
+      line-height: 14px;
       color: #B3B3BA;
       &:hover {
         color: #F0145A;
@@ -226,12 +236,32 @@ header{
     padding: 0;
     list-style: none;
     a {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 21px;
       color: #24A3FF;
       &:hover {
         color: #F0145A;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-nav-links-cont{
+    a{
+      font-size: 16px;
+      line-height: 19px;
+
+    }
+  }
+  svg{
+    width: 433px;
+    height: 63px;
+  }
+  .header-links-block-cont{
+    a{
+      font-size: 18px;
+      line-height: 21px;
     }
   }
 }
