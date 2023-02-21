@@ -89,7 +89,7 @@ header{
   width: 30px;
   position: absolute;
   right: 0;
-  top: 12%;
+  top: 9%;
   z-index: 4;
 }
 
@@ -146,6 +146,12 @@ header{
 #checkbox-toggle:checked ~ .hamburger .hamburger-line::after{
   top: 0px;
   transform: rotate(-405deg);
+}
+
+@media screen and (min-width: 400px) {
+  .hamburger{
+    top: 6%;
+  }
 }
 
 @media screen and (min-width: 568px) {
@@ -279,6 +285,7 @@ header{
   gap: 20px;
   text-align: left;
   margin-bottom: 40px;
+  width: 100%;
   p{
     font-size: 21px;
     line-height: 30px;
@@ -301,7 +308,6 @@ header{
 
 .flex-contact-mb{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 10px;
   a{
