@@ -44,6 +44,14 @@ $(document).ready(function(){
     $(".tabs").tabs();
 });
 
+document.addEventListener("submit", formSubmit);
+
+function formSubmit(event) {
+    event.preventDefault()
+    console.log(event, 'event')
+    document.querySelector('.contact-form').reset();
+    alert('Повідомлення надіслано')
+}
 
 
 // $(window).on('resize', function () {
