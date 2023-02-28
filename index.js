@@ -25,10 +25,39 @@ const settingSlider = {
     ]
 }
 
+const settingSliderabout = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    lazyLoad: 'ondemand',
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    focusOnSelect: true,
+    autoplaySpeed: 2000,
+    mobileFirst: true,
+    responsive:[
+        {
+            breakpoint:600,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+
+        // {
+        //     breakpoint: 1200,
+        //     settings: 'unslick'
+        // }
+    ]
+}
+
 $(document).ready(function(){
     $('.slider-mb-sec-2').slick(settingSlider);
     $('.slider').slick(settingSlider);
     $('.slider-mb-sec-3').slick(settingSlider);
+    $('.slider-mb-about').slick(settingSliderabout);
+    $('.slider-about').slick(settingSliderabout);
 });
 
 
