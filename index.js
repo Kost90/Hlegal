@@ -39,16 +39,11 @@ const settingSliderabout = {
     mobileFirst: true,
     responsive:[
         {
-            breakpoint:600,
+            breakpoint:768,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 3,
             }
         },
-
-        // {
-        //     breakpoint: 1200,
-        //     settings: 'unslick'
-        // }
     ]
 }
 
