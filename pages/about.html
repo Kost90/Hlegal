@@ -5,14 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../styles/reset.css">
-  <link rel="stylesheet" href="../styles/common.css">
-  <link rel="stylesheet" href="../slick/slick.css">
-  <link rel="stylesheet" href="../slick/slick-theme.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../slick/slick.css">
+    <link rel="stylesheet" href="../slick/slick-theme.css">
     <link rel="stylesheet" href="../styles/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>About</title>
 </head>
 <body>
+
 <header>
     <div class="container">
         <div class="flex-header-mob-contact">
@@ -36,7 +38,7 @@
             <nav class="header-links-block-cont">
                 <li><a href="../index.html">головна</a></li>
                 <li><a href="#">послуги</a></li>
-                <li><a href="#">команда</a></li>
+                <li><a href="../pages/teame.html">команда</a></li>
                 <li><a href="#">публікації</a></li>
                 <li><a href="../pages/contact.html">контакти</a></li>
             </nav>
@@ -71,16 +73,17 @@
             <nav class="header-links-block-cont">
                 <li><a href="../index.html">головна</a></li>
                 <li><a href="#">послуги</a></li>
-                <li><a href="#">команда</a></li>
+                <li><a href="../pages/teame.html">команда</a></li>
                 <li><a href="#">публікації</a></li>
                 <li><a href="../pages/contact.html">контакти</a></li>
             </nav>
         </div>
     </div>
 </header>
+
 <section class="main-section-about">
     <div class="container">
-        <div class="flex-main-sc">
+        <div data-aos="zoom-in" class="flex-main-sc">
             <div class="flex-bloc-dt">
                 <div class="ls-main-about">
                     <h1>Перевертаємо уявлення про юридичні послуги.</h1>
@@ -124,7 +127,7 @@
             </div>
         </div>
     </div>
-    <div class="background-img-about">
+    <div data-aos="zoom-in-up" class="background-img-about">
         <div  class="container">
             <h2 class="comand-h2">команда</h2>
         </div>
@@ -173,55 +176,53 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="border-footer"></div>
-            <div class="flex-footer">
-                <div class="flex-justcont">
-                    <div>
-                        <p>Одеса, Адміральський пр., 3</p>
-                    </div>
-                    <div class="dot-footer"></div>
+</section>
 
-                    <a href="https://goo.gl/maps/5zhGG8xazwmYa5eq8" target="_blank">Подивитися на мапі</a>
-                </div>
+<footer>
+    <div class="container">
+        <div class="border-footer"></div>
+        <div class="flex-footer">
+            <div class="flex-justcont">
                 <div>
-                    <p class="p-footer-mb">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+                    <p>Одеса, Адміральський пр., 3</p>
                 </div>
+                <div class="dot-footer"></div>
+
+                <a href="https://goo.gl/maps/5zhGG8xazwmYa5eq8" target="_blank">Подивитися на мапі</a>
             </div>
-            <div class="flex">
-                <a href="#">
-                    <svg style="width: 38px; height: 38px;">
-                        <use href="../sprites.svg#social-icon-header-facebook-blue"
-                             xlink:href="../sprites.svg#social-icon-header-facebook-blue"></use>
-                    </svg>
-                </a>
-                <div class="dot-footer"></div>
-                <div>
-                    <p> +38 (050) 390 15 91</p>
-                </div>
-                <div class="dot-footer"></div>
-                <div>
-                    <a href="#">contact@hlegals.net</a>
-                </div>
-                <div>
-                    <p class="p-footer">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
-                </div>
+            <div>
+                <p class="p-footer-mb">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
             </div>
         </div>
-    </footer>
+        <div class="flex">
+            <a href="#">
+                <svg style="width: 38px; height: 38px;">
+                    <use href="../sprites.svg#social-icon-header-facebook-blue"
+                         xlink:href="../sprites.svg#social-icon-header-facebook-blue"></use>
+                </svg>
+            </a>
+            <div class="dot-footer"></div>
+            <div>
+                <p> +38 (050) 390 15 91</p>
+            </div>
+            <div class="dot-footer"></div>
+            <div>
+                <a href="#">contact@hlegals.net</a>
+            </div>
+            <div>
+                <p class="p-footer">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
-
-
-
-
-
-
-</section>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="../slick/slick.min.js"></script>
 <script src="../index.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
