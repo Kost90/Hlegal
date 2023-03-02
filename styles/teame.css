@@ -407,6 +407,19 @@ header {
   align-items: flex-end;
   gap: 20px;
 }
+.container-members-cards .card-member:hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .container-members-cards .card-member img {
   width: 158px;
   height: 191px;
@@ -417,7 +430,69 @@ header {
   flex-direction: column;
   gap: 5px;
 }
+.container-members-cards .card-member .flex-memb-rs h4 {
+  font-size: 18px;
+  line-height: 21px;
+  color: #323264;
+}
+.container-members-cards .card-member .flex-memb-rs p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+.container-members-cards .card-member .flex-memb-rs a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F5FA;
+  bottom: 20px;
+  left: 50%;
+  transition: all 0.2s;
+  border-radius: 50%;
+}
+.container-members-cards .card-member .flex-memb-rs a:hover {
+  opacity: 1;
+}
+.container-members-cards .card-member .flex-memb-rs a:after {
+  content: "";
+  border: solid #24A3FF;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 
+@media screen and (min-width: 768px) {
+  .main-teame .h1mob {
+    margin: 80px 0;
+    text-align: center;
+  }
+  .container-members-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  .container-members-cards .card-member {
+    flex-direction: column;
+    max-width: 413px;
+    gap: 10px;
+    align-items: center;
+  }
+  .container-members-cards .card-member img {
+    width: 413px;
+    height: 500px;
+  }
+  .container-members-cards .card-member .flex-memb-rs {
+    gap: 35px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 footer {
   background: #F5F5FA;
   position: relative;

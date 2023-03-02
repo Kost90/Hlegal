@@ -874,6 +874,8 @@ header {
 .slider-mb-sec-3 .slider-item-sec3 .flex-slid-mb img {
   width: 60px;
   height: 60px;
+  border-radius: 120px;
+  object-fit: cover;
 }
 .slider-mb-sec-3 .slider-item-sec3 .flex-slid-mb h4 {
   font-size: 18px;
@@ -943,15 +945,6 @@ header {
     line-height: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
-  }
-  .slid-r-side a:after {
-    content: "";
-    border: 2px solid #24A3FF;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
   }
   .slid-r-side a:hover {
     color: #F0145A;
