@@ -440,5 +440,38 @@ header {
     margin-bottom: 80px;
   }
 }
+.section2-services {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+}
+.section2-services h3 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+}
+
+.flex-sec2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.flex-sec2 .sec-2-rs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.flex-sec2 .sec-2-rs li {
+  margin-bottom: 10px;
+  color: #F0145A;
+  list-style: disc;
+  list-style-position: inside;
+}
+.flex-sec2 .sec-2-rs li span {
+  font-size: 18px;
+  line-height: 26px;
+  color: white;
+}
 
 /*# sourceMappingURL=services.css.map */
