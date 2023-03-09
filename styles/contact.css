@@ -12,7 +12,8 @@
   font-family: "TT Norms";
   src: local("TT Norms"), url("../fonts/TTNorms-Bold.otf") format("opentype");
   font-weight: bold;
-} /*gradients*/
+}
+/*gradients*/
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -526,7 +527,6 @@ header {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
     text-fill-color: transparent;
   }
   .contact-form-desctop .caps {

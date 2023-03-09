@@ -5,23 +5,26 @@
   background: center / cover url("../images/services/background-servis-page.png") no-repeat;
 }
 
-header{
+header {
   padding: 0;
 }
-.d-flex-header-desctop-cont{
-  display: none;
-}
-.d-flex-header-desctop-cont-2{
+
+.d-flex-header-desctop-cont {
   display: none;
 }
 
-.flex-header-mob-contact{
+.d-flex-header-desctop-cont-2 {
+  display: none;
+}
+
+.flex-header-mob-contact {
   display: flex;
   flex-direction: row;
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
-  .btn-header-cont{
+
+  .btn-header-cont {
     width: 29px;
     height: 24px;
     background: transparent;
@@ -34,6 +37,7 @@ header{
     color: #B3B3BA;
     padding: 0;
     z-index: 1;
+
     &:hover {
       color: #B3B3BA;
       background: #EDEDF7;
@@ -43,17 +47,19 @@ header{
       background: #F0145A;
     }
   }
-  a{
+
+  a {
     font-size: 16px;
     line-height: 19px;
     color: #B3B3BA;
-    &:hover{
+
+    &:hover {
       color: base.$pink-accent;
     }
   }
 }
 
-.flex-header-mob-cont-2{
+.flex-header-mob-cont-2 {
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -62,7 +68,7 @@ header{
   align-items: center;
 }
 
-.header-links-block-cont{
+.header-links-block-cont {
   display: none;
   background: base.$main-color-regular;
   width: 100%;
@@ -74,15 +80,17 @@ header{
   z-index: 3;
   padding-top: 115px;
   list-style: none;
-  a{
+
+  a {
     color: white;
-    &:hover{
+
+    &:hover {
       color: base.$pink-accent;
     }
   }
 }
 
-.hamburger{
+.hamburger {
   display: block;
   width: 30px;
   position: absolute;
@@ -90,7 +98,7 @@ header{
   z-index: 4;
 }
 
-.hamburger-line{
+.hamburger-line {
   display: block;
   background-color: white;
   height: 4px;
@@ -122,7 +130,7 @@ header{
   display: none;
 }
 
-#checkbox-toggle:checked ~ .header-links-block-cont{
+#checkbox-toggle:checked ~ .header-links-block-cont {
   display: block;
   max-height: 100%;
   transition: all .5s;
@@ -131,16 +139,17 @@ header{
   position: fixed;
 }
 
-#checkbox-toggle:checked ~ .hamburger .hamburger-line{
+#checkbox-toggle:checked ~ .hamburger .hamburger-line {
   background: transparent;
   position: fixed;
 }
 
-#checkbox-toggle:checked ~ .hamburger .hamburger-line::before{
+#checkbox-toggle:checked ~ .hamburger .hamburger-line::before {
   top: 0px;
   transform: rotate(405deg);
 }
-#checkbox-toggle:checked ~ .hamburger .hamburger-line::after{
+
+#checkbox-toggle:checked ~ .hamburger .hamburger-line::after {
   top: 0px;
   transform: rotate(-405deg);
 }
@@ -150,33 +159,34 @@ header{
     padding: 50px 60px 0px;
   }
 
-  .flex-header-mob-contact{
+  .flex-header-mob-contact {
     display: none;
   }
 
-  .flex-header-mob-cont-2{
+  .flex-header-mob-cont-2 {
     display: none;
   }
 
-  .d-flex-header-desctop-cont{
+  .d-flex-header-desctop-cont {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
 
-  svg{
+  svg {
     width: 230px;
     height: 45px;
   }
 
-  .header-nav-links-cont{
+  .header-nav-links-cont {
     display: flex;
     justify-content: space-between;
     gap: 5px;
     flex-direction: row;
     align-items: center;
-    .btn-header-cont{
+
+    .btn-header-cont {
       width: 29px;
       height: 24px;
       background: transparent;
@@ -188,23 +198,28 @@ header{
       letter-spacing: 1px;
       color: #B3B3BA;
       padding: 0;
+
       &:hover {
         color: #B3B3BA;
         background: #EDEDF7;
       }
+
       &:active {
         background: #F0145A;
       }
     }
-    a{
+
+    a {
       font-size: 12px;
       line-height: 14px;
       color: #B3B3BA;
+
       &:hover {
         color: #F0145A;
       }
     }
-    .dot{
+
+    .dot {
       width: 6px;
       height: 6px;
       border-radius: 50%;
@@ -212,11 +227,11 @@ header{
     }
   }
 
-  .d-flex-header-desctop-cont-2{
+  .d-flex-header-desctop-cont-2 {
     display: block;
   }
 
-  .header-links-block-cont{
+  .header-links-block-cont {
     display: flex;
     justify-content: flex-end;
     background: none;
@@ -225,10 +240,12 @@ header{
     height: 100%;
     padding: 0;
     list-style: none;
+
     a {
       font-size: 16px;
       line-height: 21px;
       color: #24A3FF;
+
       &:hover {
         color: #F0145A;
       }
@@ -237,31 +254,32 @@ header{
 }
 
 @media screen and (min-width: 1024px) {
-  .header-nav-links-cont{
-    a{
+  .header-nav-links-cont {
+    a {
       font-size: 16px;
       line-height: 19px;
 
     }
   }
-  svg{
+  svg {
     width: 433px;
     height: 63px;
   }
-  .header-links-block-cont{
-    a{
+  .header-links-block-cont {
+    a {
       font-size: 18px;
       line-height: 21px;
     }
   }
 }
 
-.flex-container-contact{
+.flex-container-contact {
   display: flex;
   justify-content: center;
   text-align: left;
 }
-.container-contact{
+
+.container-contact {
   display: flex;
   margin-top: 20px;
   flex-direction: column;
@@ -269,15 +287,18 @@ header{
   text-align: left;
   margin-bottom: 40px;
   width: 100%;
-  p{
+
+  p {
     font-size: 21px;
     line-height: 30px;
     color: base.$main-color-regular;
   }
-  a{
+
+  a {
     font-size: 21px;
     line-height: 30px;
-    &:hover{
+
+    &:hover {
       color: #F0145A;
     }
   }

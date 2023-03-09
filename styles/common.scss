@@ -1,33 +1,38 @@
 @use "fonts";
 @use "base";
 
-html{
+html {
   font-family: 'TT Norms';
   font-size: 18px;
   line-height: 21px;
-  h1{
+
+  h1 {
     font-size: 42px;
     line-height: 50px;
-    color:base.$main-color-regular;
+
+    color: base.$main-color-regular;
   }
-  h2{
+
+  h2 {
     font-size: 32px;
     line-height: 38px;
     color: base.$main-color-regular;
   }
-  h3{
+
+  h3 {
     font-size: 24px;
     line-height: 28px;
     color: base.$main-color-regular;
   }
-  h4{
+
+  h4 {
     font-size: 18px;
     line-height: 21px;
     color: base.$main-color-regular;
   }
 }
 
-p{
+p {
   color: base.$main-black;
 }
 
@@ -41,7 +46,7 @@ p{
       font-size: 32px;
       line-height: 38px;
 
-      color:base.$main-color-regular ;
+      color: base.$main-color-regular;
     }
 
     h2 {
@@ -64,22 +69,25 @@ p{
   }
 }
 
-a{
+a {
   font-size: 16px;
   line-height: 20px;
   color: base.$blue-regular;
-  &:hover{
+
+  &:hover {
     color: base.$pink-accent;
   }
 }
 
-button{
+button {
   @include base.button-regular();
-  &:hover{
+
+  &:hover {
     background: base.$blue-hover;
     box-shadow: 0 0 30px rgba(36, 163, 255, 0.5);
   }
-  &:active{
+
+  &:active {
     background: base.$blue-active;
     box-shadow: none;
   }

@@ -12,7 +12,8 @@
   font-family: "TT Norms";
   src: local("TT Norms"), url("../fonts/TTNorms-Bold.otf") format("opentype");
   font-weight: bold;
-} /*gradients*/
+}
+/*gradients*/
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -563,7 +564,6 @@ header {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   text-fill-color: transparent;
   text-fill-color: transparent;
 }
@@ -854,7 +854,6 @@ header {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   text-fill-color: transparent;
 }
 .slider-mb-sec-3 .slider-item-sec3 .flex-slid-mb {
@@ -949,7 +948,6 @@ header {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
     text-fill-color: transparent;
     margin-bottom: 15px;
   }
@@ -1248,7 +1246,6 @@ header {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   text-fill-color: transparent;
   margin-bottom: 20px;
 }
@@ -1342,7 +1339,6 @@ header {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
     text-fill-color: transparent;
     margin-top: 3px;
     margin-bottom: 40px;
